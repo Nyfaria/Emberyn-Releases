@@ -1,0 +1,130 @@
+{
+  "id": "emberyn",
+  "title": "Emberyn",
+  "description": "Emberyn - a Foundry VTT module.",
+  "version": "0.1.0",
+  "authors": [
+    {
+      "name": "Nyfaria",
+      "email": "nyfaria@minebounds.com"
+    }
+  ],
+  "compatibility": {
+    "minimum": "13",
+    "verified": "13",
+    "maximum": "14"
+  },
+  "esmodules": ["dist/module.js"],
+  "styles": ["dist/module.css"],
+  "languages": [
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "lang/en.json"
+    }
+  ],
+  "packs": [
+    {
+      "name": "items",
+      "label": "Emberyn - Items (GM)",
+      "path": "packs/items",
+      "type": "Item",
+      "system": "dnd5e",
+      "ownership": {
+        "PLAYER": "NONE",
+        "TRUSTED": "NONE",
+        "ASSISTANT": "OWNER"
+      },
+      "flags": {}
+    },
+    {
+      "name": "actors",
+      "label": "Emberyn - Actors (GM)",
+      "path": "packs/actors",
+      "type": "Actor",
+      "system": "dnd5e",
+      "ownership": {
+        "PLAYER": "NONE",
+        "TRUSTED": "NONE",
+        "ASSISTANT": "OWNER"
+      },
+      "flags": {}
+    },
+    {
+      "name": "journals-gm",
+      "label": "Emberyn - GM Canon (Private)",
+      "path": "packs/journals-gm",
+      "type": "JournalEntry",
+      "ownership": {
+        "PLAYER": "NONE",
+        "TRUSTED": "NONE",
+        "ASSISTANT": "OWNER"
+      },
+      "flags": {}
+    },
+    {
+      "name": "journals-player",
+      "label": "Emberyn - Player Handouts",
+      "path": "packs/journals-player",
+      "type": "JournalEntry",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      },
+      "flags": {}
+    },
+    {
+      "name": "scenes",
+      "label": "Emberyn - Scenes (GM)",
+      "path": "packs/scenes",
+      "type": "Scene",
+      "ownership": {
+        "PLAYER": "NONE",
+        "TRUSTED": "NONE",
+        "ASSISTANT": "OWNER"
+      },
+      "flags": {}
+    },
+    {
+      "name": "macros",
+      "label": "Emberyn - Macros (GM)",
+      "path": "packs/macros",
+      "type": "Macro",
+      "ownership": {
+        "PLAYER": "NONE",
+        "TRUSTED": "NONE",
+        "ASSISTANT": "OWNER"
+      },
+      "flags": {}
+    }
+  ],
+  "packFolders": [
+    {
+      "name": "Emberyn",
+      "sorting": "m",
+      "color": "#7b3fbf",
+      "packs": ["items", "actors", "journals-player", "journals-gm", "scenes", "macros"]
+    }
+  ],
+  "relationships": {
+    "systems": [
+      {
+        "id": "dnd5e",
+        "type": "system",
+        "compatibility": {
+          "minimum": "3.0.0"
+        }
+      }
+    ],
+    "requires": [],
+    "recommends": []
+  },
+  "url": "https://github.com/Nyfaria/Emberyn-releases",
+  "manifest": "https://raw.githubusercontent.com/Nyfaria/Emberyn-releases/main/module.json",
+  "download": "https://raw.githubusercontent.com/Nyfaria/Emberyn-releases/main/module.zip",
+  "license": "LICENSE",
+  "readme": "README.md",
+  "bugs": "https://github.com/Nyfaria/Emberyn/issues",
+  "changelog": "https://github.com/Nyfaria/Emberyn/blob/master/CHANGELOG.md",
+  "socket": false
+}
