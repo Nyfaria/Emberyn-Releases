@@ -2,7 +2,7 @@
   "id": "emberyn",
   "title": "Emberyn",
   "description": "Emberyn - a Foundry VTT module.",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "authors": [
     {
       "name": "Nyfaria",
@@ -11,8 +11,7 @@
   ],
   "compatibility": {
     "minimum": "13",
-    "verified": "13",
-    "maximum": "14"
+    "verified": "14"
   },
   "esmodules": ["dist/module.js"],
   "styles": ["dist/module.css"],
