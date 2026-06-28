@@ -2,7 +2,7 @@
   "id": "emberyn",
   "title": "Emberyn",
   "description": "Emberyn - a Foundry VTT module.",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "authors": [
     {
       "name": "Nyfaria",
@@ -32,6 +32,18 @@
       "ownership": {
         "PLAYER": "NONE",
         "TRUSTED": "NONE",
+        "ASSISTANT": "OWNER"
+      },
+      "flags": {}
+    },
+    {
+      "name": "races",
+      "label": "Emberyn - Races",
+      "path": "packs/races",
+      "type": "Item",
+      "system": "dnd5e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
         "ASSISTANT": "OWNER"
       },
       "flags": {}
@@ -102,7 +114,7 @@
       "name": "Emberyn",
       "sorting": "m",
       "color": "#7b3fbf",
-      "packs": ["items", "actors", "journals-player", "journals-gm", "scenes", "macros"]
+      "packs": ["items", "races", "actors", "journals-player", "journals-gm", "scenes", "macros"]
     }
   ],
   "relationships": {
